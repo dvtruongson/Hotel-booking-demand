@@ -17,11 +17,9 @@ Because I have many classes(3 classes), this problem is an instance of multiclas
 
 I usually need to do quite a bit of preprocessing on the raw data in order to be able to feed it—as tensors—into a neural network.
 
-Stacks of Dense layers with relu activations can solve a wide range of problems. In a multiclass classification problem (many output classes).
+Stacks of Dense layers with relu activations can solve a wide range of problems. In a multiclass classification problem (many output classes) the rmsprop optimizer is generally a good enough choice, whatever the problem. 
 
-The rmsprop optimizer is generally a good enough choice, whatever the problem. 
+As they get better on their training data, neural networks eventually start overfitting and end up obtaining increasingly worse results on data they’ve never seen before. 
 
-As they get better on their training data, neural networks eventually start overfitting and end up obtaining increasingly worse results on data they’venever seen before. 
-
-Be sure to always monitor performance on data that is outside of the training set.
+It' s important to always monitor performance on data that is outside of the training set.
 
